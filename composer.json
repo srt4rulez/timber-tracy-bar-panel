@@ -1,0 +1,13 @@
+{
+    "name": "srt4rulez/timber-tracy-bar-panel",
+    "description": "A Tracy Bar Panel with Timber info for debugging",
+    "keywords": ["tracy","timber","bar","panel","debugging"],
+    "require": {
+        "php": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "srt4rulez\\": "src/"
+        }
+    }
+}
