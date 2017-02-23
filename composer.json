@@ -2,6 +2,13 @@
     "name": "srt4rulez/timber-tracy-bar-panel",
     "description": "A Tracy Bar Panel with Timber info for debugging",
     "keywords": ["tracy","timber","bar","panel","debugging"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jake Dennison",
+            "email": "srt4rulez@gmail.com"
+        }
+    ],
     "require": {
         "php": "^5.4"
     },
