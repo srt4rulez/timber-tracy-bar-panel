@@ -7,5 +7,4 @@ class Helpers
     {
         return $value ? 'On' : 'Off';
     }
-
 }

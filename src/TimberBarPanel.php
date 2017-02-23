@@ -64,22 +64,22 @@ class TimberBarPanel implements \Tracy\IBarPanel
      *
      * @return string
      */
-	public function getTab()
-	{
+    public function getTab()
+    {
         ob_start();
 
-		require __DIR__ . '/../assets/tab.html';
+        require __DIR__ . '/../assets/tab.html';
 
-		return ob_get_clean();
-	}
+        return ob_get_clean();
+    }
 
     /**
      * Return the HTML for the panel portion of this bar panel
      *
      * @return string
      */
-	public function getPanel()
-	{
+    public function getPanel()
+    {
         ob_start();
 
         $info = [
@@ -96,6 +96,6 @@ class TimberBarPanel implements \Tracy\IBarPanel
 
         require __DIR__ . '/../assets/panel.php';
 
-		return ob_get_clean();
-	}
+        return ob_get_clean();
+    }
 }
