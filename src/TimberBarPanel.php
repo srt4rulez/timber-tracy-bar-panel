@@ -15,23 +15,9 @@ class TimberBarPanel implements \Tracy\IBarPanel
      */
     public function __construct()
     {
-        if (!$this->doesTimberExist()) {
-            return;
-        }
-
         add_filter('timber/loader/render_data', [$this, 'setRenderData']);
         add_filter('timber_render_file', [$this, 'addRenderFile']);
         // add_filter('timber/calling_php_file', [$this, 'addCallingPhpFile']);
-    }
-
-    /**
-     * Check if Timber class exists
-     *
-     * @return bool
-     */
-    protected function doesTimberExist()
-    {
-        return class_exists('Timber');
     }
 
     /**
@@ -94,10 +80,6 @@ class TimberBarPanel implements \Tracy\IBarPanel
      */
 	public function getPanel()
 	{
-        if (!$this->doesTimberExist()) {
-            return '<h1>Timber class is not loaded/activated.</h1>';
-        }
-
         ob_start();
 
         $info = [
