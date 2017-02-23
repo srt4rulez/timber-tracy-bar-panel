@@ -23,25 +23,25 @@ This tracy panel shows info about the following:
 
 Install via composer:
 
-```
+```php
 composer require srt4rulez/timber-tracy-bar-panel --dev
 ```
 
 Add composer autoload to `functions.php` (You are using this in WordPress theme right?):
 
-```
+```php
 require __DIR__ . '/vendor/autoload.php';
 ```
 
 Enable tracy, then add the `TimberBarPanel`, like so:
 
-```
+```php
 Tracy\Debugger::enable( Tracy\Debugger::DEVELOPMENT );
 Tracy\Debugger::getBar()->addPanel( new srt4rulez\TimberBarPanel );
 ```
 
 You could wrap tracy in a condition for `WP_DEBUG` and `! is_admin()` (I've experienced uploads error when tracy was enabled on admin side)
-```
+```php
 if ( WP_DEBUG && ! is_admin() ) {
 
 	Tracy\Debugger::enable( Tracy\Debugger::DEVELOPMENT );
@@ -52,7 +52,7 @@ if ( WP_DEBUG && ! is_admin() ) {
 
 Final `functions.php`:
 
-```
+```php
 require __DIR__ . '/vendor/autoload.php';
 
 if ( WP_DEBUG && ! is_admin() ) {
