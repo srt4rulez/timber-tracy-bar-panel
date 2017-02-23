@@ -23,7 +23,7 @@ This tracy panel shows info about the following:
 
 Install via composer:
 
-```php
+```
 composer require srt4rulez/timber-tracy-bar-panel --dev
 ```
 
