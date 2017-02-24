@@ -3,6 +3,8 @@
 [![Latest Stable Version](https://poser.pugx.org/srt4rulez/timber-tracy-bar-panel/v/stable?format=flat-square)](https://packagist.org/packages/srt4rulez/timber-tracy-bar-panel)
 [![License](https://poser.pugx.org/srt4rulez/timber-tracy-bar-panel/license?format=flat-square)](https://packagist.org/packages/srt4rulez/timber-tracy-bar-panel)
 
+![Timber Tab](https://github.com/srt4rulez/timber-tracy-bar-panel/blob/master/timber-tab.png?raw=true "Timber Tab")
+
 ## What info does it show?
 
 This tracy panel shows info about the following:
@@ -15,6 +17,8 @@ This tracy panel shows info about the following:
 * Cache
 * Auto Meta
 * Autoescape
+
+![Timber Panel](https://github.com/srt4rulez/timber-tracy-bar-panel/blob/master/timber-panel.png?raw=true "Timber Panel")
 
 ## Requirements:
 
