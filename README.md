@@ -34,7 +34,7 @@ Install via composer:
 composer require srt4rulez/timber-tracy-bar-panel --dev
 ```
 
-Add composer autoload to `functions.php` (You are using this in WordPress theme right?):
+Add composer autoload to `functions.php` (You are using this in a WordPress theme right?):
 
 ```php
 require __DIR__ . '/vendor/autoload.php';
